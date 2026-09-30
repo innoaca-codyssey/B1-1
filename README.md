@@ -2,7 +2,7 @@
 
 HTML, CSS, JavaScript만으로 반응형 포트폴리오 웹사이트를 만들고 GitHub Pages에 배포했습니다. React, jQuery, Bootstrap 같은 라이브러리는 사용하지 않았고, Projects 섹션은 GitHub API로 제 공개 저장소를 받아와 화면에 그립니다.
 
-배포 주소는 https://yessjun.github.io/B1-1/ 입니다.
+배포 주소는 https://innoaca-codyssey.github.io/B1-1/ 입니다.
 
 ## 사용 기술
 
@@ -461,7 +461,7 @@ $ curl -s -o /dev/null -w "%{http_code} %{url_effective}\n" https://yessjun.gith
 저장소를 받아 VS Code로 열고 Live Server 확장의 Go Live를 누르면 됩니다. 확장 없이 확인하려면 폴더에서 정적 서버를 실행해도 됩니다.
 
 ```bash
-$ git clone https://github.com/yessjun/B1-1.git
+$ git clone https://github.com/innoaca-codyssey/B1-1.git
 $ cd B1-1
 $ python3 -m http.server 8081
 ```
