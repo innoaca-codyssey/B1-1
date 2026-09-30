@@ -545,3 +545,18 @@ loadProjects();
 ```
 
 이때 안내 문구와 다시 시도 버튼이 나타나는 것, 버튼을 누르면 다시 요청하는 것을 확인했습니다. 다시 시도 버튼은 `innerHTML`로 에러 문구를 그릴 때마다 새로 만들어지므로, 버튼을 그린 직후에 이벤트를 연결해야 합니다. 그리는 코드 바깥에서 한 번만 연결하면 두 번째 실패부터는 눌러도 반응하지 않습니다.
+
+## 조직 주소 확인
+
+2026-10-01에 저장소를 innoaca-codyssey로 옮겼습니다. GitHub Pages는 같은 main 루트 설정을 유지하며 주소가 변경되었습니다.
+
+```bash
+$ curl --noproxy '*' -sS -o /dev/null -w '%{http_code} %{url_effective}\n' https://innoaca-codyssey.github.io/B1-1/
+200 https://innoaca-codyssey.github.io/B1-1/
+$ curl --noproxy '*' -sS -o /dev/null -w '%{http_code} %{url_effective}\n' https://innoaca-codyssey.github.io/B1-1/css/style.css
+200 https://innoaca-codyssey.github.io/B1-1/css/style.css
+$ curl --noproxy '*' -sS -o /dev/null -w '%{http_code} %{url_effective}\n' https://innoaca-codyssey.github.io/B1-1/js/main.js
+200 https://innoaca-codyssey.github.io/B1-1/js/main.js
+$ curl --noproxy '*' -sS -o /dev/null -w '%{http_code} %{url_effective}\n' https://innoaca-codyssey.github.io/B1-1/images/profile.jpg
+200 https://innoaca-codyssey.github.io/B1-1/images/profile.jpg
+```
